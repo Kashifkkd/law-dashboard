@@ -155,7 +155,12 @@ const DashboardClosings = () => {
 
 export default DashboardClosings;
 
-export const DateFilterBox = ({ item, isSelected }) => {
+type DateFilterProps = {
+  item: any;
+  isSelected: boolean;
+};
+
+export const DateFilterBox = ({ item, isSelected }: DateFilterProps) => {
   return (
     <Stack
       alignItems="center"

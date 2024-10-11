@@ -87,7 +87,7 @@ const DashboardPrimaryOptions = () => {
 
 export default DashboardPrimaryOptions;
 
-export const DashboardPrimaryOptionsItem = ({ item }) => {
+export const DashboardPrimaryOptionsItem = ({ item }: any) => {
   const theme = useTheme();
   return (
     <Stack
@@ -122,7 +122,7 @@ export const DashboardPrimaryOptionsItem = ({ item }) => {
   );
 };
 
-export const DashboardPrimaryMoreOptionsItem = ({ item }) => {
+export const DashboardPrimaryMoreOptionsItem = ({ item }: any) => {
   return (
     <Stack
       sx={{
@@ -131,7 +131,7 @@ export const DashboardPrimaryMoreOptionsItem = ({ item }) => {
         backgroundImage: `url(${BlendImage})`,
         backgroundSize: "cover",
         mt: "1rem",
-        cursor: "pointer"
+        cursor: "pointer",
       }}
     >
       <Stack

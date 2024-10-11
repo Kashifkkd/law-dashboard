@@ -56,7 +56,7 @@ const DashboardHelpCenter = () => {
 
 export default DashboardHelpCenter;
 
-export const HelpCenterButton = ({ item }) => {
+export const HelpCenterButton = ({ item }: any) => {
   return (
     <Stack
       direction="row"
@@ -69,8 +69,8 @@ export const HelpCenterButton = ({ item }) => {
         borderRadius: "2.25rem",
         cursor: "pointer",
         "&:hover": {
-            backgroundColor: "#f5f5f5"
-        }
+          backgroundColor: "#f5f5f5",
+        },
       }}
     >
       <CustomTypography>{item.label}</CustomTypography>
