@@ -1,7 +1,7 @@
 import { useTheme, Stack, CircularProgress } from "@mui/material";
 
 
-const BoxCircularLoader = ({ sx }) => {
+const BoxCircularLoader = ({ sx }: any) => {
   const theme = useTheme();
   return (
     <Stack alignItems="center" justifyContent="center" sx={{ flex: 1, ...sx }}>
