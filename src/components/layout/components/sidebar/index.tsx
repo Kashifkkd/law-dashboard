@@ -1,12 +1,12 @@
 import { useTheme, Stack, IconButton } from "@mui/material";
-import HomeIcon from "../../../icons/sidebar/HomeIcon";
-import IntegrationIcon from "../../../icons/sidebar/IntegrationIcon";
-import UsersIcon from "../../../icons/sidebar/UsersIcon";
-import SettingsIcon from "../../../icons/navbar/SettingsIcon";
+import HomeIcon from "../../../../icons/sidebar/HomeIcon";
+import IntegrationIcon from "../../../../icons/sidebar/IntegrationIcon";
+import UsersIcon from "../../../../icons/sidebar/UsersIcon";
+import SettingsIcon from "../../../../icons/navbar/SettingsIcon";
 import { useState } from "react";
-import ExpandLessIcon from "../../../icons/ExpandLessIcon";
-import ExpandMoreIcon from "../../../icons/ExpandMoreIcon";
-import CustomTypography from "../../typography";
+import ExpandLessIcon from "../../../../icons/ExpandLessIcon";
+import ExpandMoreIcon from "../../../../icons/ExpandMoreIcon";
+import CustomTypography from "../../../typography";
 
 type SidebarItemType = {
   value: string;
@@ -81,7 +81,10 @@ const Sidebar = () => {
         }}
       >
         {/* Top items */}
-        <Stack sx={{ gap: "1rem", zIndex: 1 }}>
+        <Stack
+          alignItems={!isSidebarExpanded ? "center" : "flex-start"}
+          sx={{ gap: "1rem", zIndex: 1 }}
+        >
           {sidebarTopItems.map((item) => (
             <SidebarItem
               key={item.value}
@@ -93,7 +96,10 @@ const Sidebar = () => {
         </Stack>
 
         {/* Bottom items */}
-        <Stack sx={{ gap: "1rem", zIndex: 1 }}>
+        <Stack
+          alignItems={!isSidebarExpanded ? "center" : "flex-start"}
+          sx={{ gap: "1rem", zIndex: 1 }}
+        >
           {sidebarBottomItems.map((item) => (
             <SidebarItem
               key={item.value}
@@ -150,7 +156,7 @@ export const SidebarItem = ({
         cursor: "pointer",
         "&:hover": {
           background: isSidebarExpanded ? "#2AA8B0" : "",
-          borderRadius: "2rem"
+          borderRadius: "2rem",
         },
       }}
     >

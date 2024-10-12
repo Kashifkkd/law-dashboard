@@ -1,7 +1,7 @@
 import { Box, Stack } from "@mui/material";
 import { ReactNode } from "react";
 import Navbar from "./components/navbar";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/sidebar";
 import { Outlet } from "react-router";
 
 type LayoutProps = {
