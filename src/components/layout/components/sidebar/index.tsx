@@ -149,6 +149,8 @@ export const SidebarItem = ({
       direction="row"
       alignItems="center"
       sx={{
+        flex: 1,
+        width: "100%",
         gap: isSelected ? "0.5rem" : "0.25rem",
         padding: isSelected ? "0.5rem 0.5rem 0.5rem 0.5rem" : 0,
         background: isSelected && isSidebarExpanded ? "#2AA8B0" : "inherit",

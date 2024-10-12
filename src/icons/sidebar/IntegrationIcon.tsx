@@ -1,10 +1,10 @@
-const IntegrationIcon = ({ ...props }) => {
+const IntegrationIcon = ({ fill = "none", ...props }) => {
   return (
     <svg
       width="27"
       height="26"
       viewBox="0 0 27 26"
-      fill="none"
+      fill={fill}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
